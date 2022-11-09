@@ -1,0 +1,63 @@
+MOD 9 Challenge
+
+GOAL: make a README.md from user input
+- call from terminal
+  - "node index.js"
+- require inquirer@8.2.4
+Screencast if I’m Prework Mod 2
+Clone starter code repo
+
+ACCEPTANCE CRITERIA:
+-----------------------
+- Prompt for user input
+  - Prompt for title, Project title
+    - "What is the title of your project?"
+  - Description: PROMPT
+    - "Provide a short description description.  Think about your motivation, what problem it solves, why you built it, and what you learned."
+  - Installation Instructions: PROMPT
+    - "What are the steps required to install your project?"
+  - Usage: PROMPT
+    - "List any usage instructions and examples for use."
+  - License: LIST OF OPTIONS
+    - LIST OF OPTIONS: https://choosealicense.com
+    - "This application is covered under the "
+  - Contributing: PROMPT
+    - "Provide information on how to contributing to your project."
+  - Tests: PROMPT
+    - "Provide examples of how to run any tests here."
+  - Questions: PROMPT
+    - GitHub Username: PROMPT
+    - Email address: PROMPT
+
+- Create a README file with the following Sections
+  - Badge (for the license)
+    -  ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+    - https://shields.io/
+  - Description
+  - TOC
+  - Installation Instructions
+  - Usage
+  - License
+    - "This application is covered under the " <license>
+  - Contributing
+  - Tests
+  - Questions
+    - Add GitHub username
+    - Add link to user's GitHub profile
+    - Add user's email address with instructions on how to reach the user with additional questions
+  
+
+VARIABLES
+-----------------------
+licenseBadge
+title
+description
+toc 
+installation
+usage
+license
+contributing 
+tests
+githubUsername
+githubProfileURL
+emailAddress
