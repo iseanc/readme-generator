@@ -10,18 +10,18 @@ Clone starter code repo
 ACCEPTANCE CRITERIA:
 -----------------------
 - Prompt for user input
-  - Prompt for title, Project title
+  - xx Prompt for title, Project title
     - "What is the title of your project?"
-  - Description: PROMPT
+  - xx Description: PROMPT
     - "Provide a short description description.  Think about your motivation, what problem it solves, why you built it, and what you learned."
-  - Installation Instructions: PROMPT
+  - xx Installation Instructions: PROMPT
     - "What are the steps required to install your project?"
-  - Usage: PROMPT
+  - xx Usage: PROMPT
     - "List any usage instructions and examples for use."
-  - License: LIST OF OPTIONS
+  - xx License: LIST OF OPTIONS
     - LIST OF OPTIONS: https://choosealicense.com
     - "This application is covered under the "
-  - Contributing: PROMPT
+  - xx Contributing: PROMPT
     - "Provide information on how to contributing to your project."
   - Tests: PROMPT
     - "Provide examples of how to run any tests here."
