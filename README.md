@@ -37,6 +37,11 @@ Provide instructions and examples for use. Include screenshots as needed.
 - After completing the last prompt, a new README.md file will be created in a ./data folder under the app directory.
 - NOTE: The ./data folder must exist or the application will error while attempting to write the file to disk.  If a README.md file already exists, it will be overwritten.
 
+**Video Walkthroughs**
+
+See my [Video Demo on Screencastify](https://watch.screencastify.com/v/yRnyAYcodgJPe0t5xCvP)
+
+**Screen Shots**
 ![Information Prompts 1](assets/images/screen1.png)
 ![Information Prompts 2](assets/images/screen2.png)
 ![README Sample part 1](assets/images/readme1.png)
