@@ -1,15 +1,12 @@
 # Professional README Generator Starter Code
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+- NOTE: README template is based on [How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+As a web-developer, I want to have a tool that helps me quickly generate professional-looking README files, so that I can provide more consistency and work more efficiently.
 
-- What was your motivation?
-- Why did you build this project?
-- What problem does it solve?
-- What did you learn?
+This project is the result of an assignment from a Full Stack Web Coding Boot Camp.  Additionally, the instructor recommended this as a valuable project that can be used in the future.
 
 ## Table of Contents (Optional)
 
@@ -17,53 +14,52 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
+- [Features](#features)
+- [How to Contribute](#contribute)
+- [Tests](#test)
 
 ## Installation
 
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
+- Make sure Node.JS is installed on you computer.
+- Clone the [GitHub Repository](https://github.com/iseanc/readme-generator)
+- Open a terminal/command-prompt and run `npm install`.
+
 ## Usage
 
 Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+- From a terminal window, switch to the directory where you cloned the REAME Generator repository.
+- To run the application, type `node index.js` and hit Enter.
+- Follow the prompts to enter information for your README file.
+- After completing the last prompt, a new README.md file will be created in a ./data folder under the app directory.
+- NOTE: The ./data folder must exist or the application will error while attempting to write the file to disk.  If a README.md file already exists, it will be overwritten.
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+![Information Prompts 1](assets/images/screen1.png)
+![Information Prompts 2](assets/images/screen2.png)
+![README Sample part 1](assets/images/readme1.png)
+![README Sample part 2](assets/images/readme2.png)
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+[MIT License](LICENSE/).
 
 ## Features
 
-If your project has a lot of features, list them here.
+- If you leave any of the prompts blank (except for Title and Description), the app will skip creating those sections in the final README. and they will not be added to the Table of Contents.
+- If you choose NONE for license, then the License section will not be created or added to the Contents.
+- If you answer either or both of the GitHub username and email address prompts, the Questions section will be created and added to the Table of Contents.  Otherwise, this section will not be created.
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+Visit the [README Generator repo](https://github.com/iseanc/readme-generator) and submit a new Issue.
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Some tests you can try:
+- Run the app without the ./data folder.
+- Skip any of the prompts and verify that the section is not included in the README.md nor in the Table of Contents.
+- Try different license options and verify that a license badge and License section with a link to the License website are added to the README.
+- When you choose NONE on the License prompt, the License section, badge, and Table of Contents entry should not be added to the final README.
