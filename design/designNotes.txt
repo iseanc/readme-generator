@@ -33,6 +33,7 @@ ACCEPTANCE CRITERIA:
   - Badge (for the license)
     -  ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
     - https://shields.io/
+  - Title 
   - Description
   - TOC
   - Installation Instructions
