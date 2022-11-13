@@ -1,10 +1,10 @@
 # My Project Title
 
-![LICENSE](https://img.shields.io/static/v1?label=License&color=blue&message=BSL-1.0)
+![LICENSE](https://img.shields.io/static/v1?label=License&color=blue&message=MIT)
 
 ## Description
 
-My project description.
+This is the project description.  It will list what problem is solved, etc.
 
 ## Table of Contents
 
@@ -17,25 +17,25 @@ My project description.
 
 ## Installation
 
-Run `npm install`
+Clone the repo.  From a terminal, switch to the folder and run `npm install`
 
 ## Usage
 
-Run `node index.js` and follow prompts
+Run the app from the terminal with `node index.js`.
 
 ## License
 
-See https://opensource.org/licenses/BSL-1.0 for license details.
+See https://opensource.org/licenses/MIT for license details.
 
 ## Contributing
 
-Open a new issue on our GitHub repo.
+Add a new issue on our GitHub repo.
 
 ## Tests
 
-No tests provided.
+Perform any tests you like.
 
 ## Questions
 
-Visit me [on Github](https://github.com/iseanc).  You may also email me with questions and comments at [emailme@mydomain.dom](mailto:emailme@mydomain.dom)
+Visit me [on Github](https://github.com/iseanc).  You may also email me with questions and comments at [myemail@mydomain.com](mailto:myemail@mydomain.com)
 
