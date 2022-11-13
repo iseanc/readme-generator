@@ -1,10 +1,10 @@
-# README Generator
+# My Project Title
 
-![LICENSE](https://img.shields.io/static/v1?label=License&color=blue&message=Unlicense)
+![LICENSE](https://img.shields.io/static/v1?label=License&color=blue&message=BSL-1.0)
 
 ## Description
 
-This application generates "professional" looking readme files.
+My project description.
 
 ## Table of Contents
 
@@ -17,25 +17,25 @@ This application generates "professional" looking readme files.
 
 ## Installation
 
-Who knows.
+Run `npm install`
 
 ## Usage
 
-At the terminal, type 'node index.js' and hit Enter, then follow the prompts to provide info.  When completed, the README file will be written to the ./data subfolder.
+Run `node index.js` and follow prompts
 
 ## License
 
-See https://opensource.org/licenses/Unlicense for license details.
+See https://opensource.org/licenses/BSL-1.0 for license details.
 
 ## Contributing
 
-Create an issue under the repo.
+Open a new issue on our GitHub repo.
 
 ## Tests
 
-No tests specified.
+No tests provided.
 
 ## Questions
 
-Visit me [on Github](https://github.com/iseanc).  You may also email me with questions and comments at [iseanc@hotmail.com](mailto:iseanc@hotmail.com)
+Visit me [on Github](https://github.com/iseanc).  You may also email me with questions and comments at [emailme@mydomain.dom](mailto:emailme@mydomain.dom)
 
