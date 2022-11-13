@@ -1,5 +1,5 @@
 // VARIABLES:
-let licenseBadge, title, description, toc, installation, usage, license, contributing, tests, githubUsername, githubUrl, githubProfileURL, emailAddress;
+let licenseBadge, title, description, toc, installation, usage, contributing, tests, githubUsername, githubUrl, githubProfileURL, emailAddress;
 
 const readmeSections = ['Description','Table of Contents','Installation','Usage','License','Contributing','Tests','Questions'];
 // License resource URL
@@ -8,11 +8,6 @@ const chooseALicense = 'https://choosealicense.com/licenses/'
 
 //License badge URL
 const licenseBadgeUrl = 'https://img.shields.io/static/v1?label=License&color=blue&message=';
-
-//Badge URL if "repo already licensed"
-const licenseBadgeExistsUrl = 'https://img.shields.io/github/license/';
-// -- add /<githubUserID>/repoName
-const badgeColor = '?color=blue';
 
 githubUrl = 'https://github.com/';
 
@@ -27,19 +22,19 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let licenseLink = osiUrl + license;
+  return licenseLink;
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  let licenseSection = "";
+  let licenseData = '';
 
-  if (license != 'None') {
-    //...
-    licenseSection += `## ${readmeSections[4]}\n\n`;
-    licenseSection += `See ${renderLicenseLink(license)} for license details.\n\n`;
+  if (license != 'NONE') {
+    licenseData += `## ${readmeSections[4]}\n\n`;
+    licenseData += `See ${renderLicenseLink(license)} for license details.\n\n`;
   }
-  return licenseSection;
+  return licenseData;
 }
 
 function createTOC(data) {
@@ -49,18 +44,32 @@ function createTOC(data) {
   delete contents.title;
   delete contents.description;
 
-  console.log("createTOC: ");
   if (Object.keys(contents).length != 0){
     tocText += `## ${readmeSections[1]}\n\n`;
     for (const item in contents) {
-      console.log(item, contents[item], contents[item] === '');
-      if (contents[item] != '') {
-        
+  
+      if (contents[item] != '' && item != 'githubUsername' && item != 'emailAddress') {
+        tocText += '- [' + item[0].toUpperCase() + item.substring(1) + '](#' + item + ')\n'
+      }
+
+      else if (item === 'githubUsername' || item === 'emailAddress') {
+
+        if (item === 'githubUsername' && contents[item] != '') {
+          tocText += '- [Questions](#questions)\n';
+          break;
+        }
+
+        else if (item === 'emailAddress' && contents[item] != '') {
+          tocText += '- [Questions](#questions)\n';
+          break;
+        }
       }
     };
+
+    tocText += '\n'
+
   }
-  // for (d in data) {};
-  //return tocText
+  return tocText;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -71,11 +80,6 @@ function generateMarkdown(data) {
   // Title
   markdown = `# ${data.title}\n\n`;
 
-  //`# ${}`;
-  // markdown += `## ${}\n`;
-  if (data != '') {
-
-  }
   // License Badge
   if (data.license != 'NONE') {
     markdown += `![LICENSE](${renderLicenseBadge(data.license)})\n\n`
@@ -102,8 +106,8 @@ function generateMarkdown(data) {
   }
   
   // License
-  if (data.license != '') {
-    renderLicenseSection(data.license);
+  if (data.license != '') { // && data.license != 'NONE'
+    markdown += renderLicenseSection(data.license);
   }
 
   // Contributing
@@ -119,19 +123,19 @@ function generateMarkdown(data) {
   }
 
   // Questions
-  if (data.githubUsername != '' && data.emailAddress != '') {
+  if (data.githubUsername != '' || data.emailAddress != '') {
     markdown += `## ${readmeSections[7]}\n\n`;
 
     if (data.githubUsername != '') {
-      markdown += `Visit me [on Github](${githubUrl + data.githubUsername}).\n`;
+      markdown += `Visit me [on Github](${githubUrl + data.githubUsername}).  `;
     }
 
-    if (data != '') {
-      markdown += `You may also email me with questions and comments at ${data.emailAddress}\n\n`;
+    if (data.emailAddress != '') {
+      markdown += `You may also email me with questions and comments at [${data.emailAddress}](mailto:${data.emailAddress})\n\n`;
     }
   }
 
-  // return markdown;
+  return markdown;
   // return data;
 }
 

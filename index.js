@@ -84,8 +84,8 @@ function init() {
   inquirer
   .prompt(arrayQuestions)
   .then((response) => { 
-    // writeToFile(gm(response));
-    console.log(gm(response));
+    writeToFile(gm(response));
+    // console.log(gm(response));
     }
   );
 }
