@@ -39,7 +39,7 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 **Video Walkthroughs**
 
-See my [Video Demo on Screencastify](https://watch.screencastify.com/v/yRnyAYcodgJPe0t5xCvP)
+See my [Video Demo on Screencastify](https://watch.screencastify.com/v/TGJCmYKD0zanIdI6hcQw)
 
 **Screen Shots**
 ![Information Prompts 1](assets/images/screen1.png)

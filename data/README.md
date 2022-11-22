@@ -1,10 +1,10 @@
-# My Project Title
+# My README Generator
 
 ![LICENSE](https://img.shields.io/static/v1?label=License&color=blue&message=MIT)
 
 ## Description
 
-This is the project description.  It will list what problem is solved, etc.
+It generates professional looking README files with Markdown
 
 ## Table of Contents
 
@@ -17,11 +17,11 @@ This is the project description.  It will list what problem is solved, etc.
 
 ## Installation
 
-Clone the repo.  From a terminal, switch to the folder and run `npm install`
+Clone the repo from GitHub, run npm i to install requirements, run node index.js to start.
 
 ## Usage
 
-Run the app from the terminal with `node index.js`.
+Follow prompts to enter README sections.  When complete, README is copied to ./data folder.
 
 ## License
 
@@ -29,11 +29,11 @@ See https://opensource.org/licenses/MIT for license details.
 
 ## Contributing
 
-Add a new issue on our GitHub repo.
+Please open an issue on the GitHub repo.
 
 ## Tests
 
-Perform any tests you like.
+No tests defined.
 
 ## Questions
 
