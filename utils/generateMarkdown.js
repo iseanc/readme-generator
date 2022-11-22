@@ -2,6 +2,7 @@
 let licenseBadge, title, description, toc, installation, usage, contributing, tests, githubUsername, githubUrl, githubProfileURL, emailAddress;
 
 const readmeSections = ['Description','Table of Contents','Installation','Usage','License','Contributing','Tests','Questions'];
+
 // License resource URL
 const osiUrl = 'https://opensource.org/licenses/';
 const chooseALicense = 'https://choosealicense.com/licenses/'
@@ -11,21 +12,21 @@ const licenseBadgeUrl = 'https://img.shields.io/static/v1?label=License&color=bl
 
 githubUrl = 'https://github.com/';
 
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Return a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let badge = licenseBadgeUrl + license; 
   return badge;
 }
 
-// TODO: Create a function that returns the license link
+// Returns a license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   let licenseLink = osiUrl + license;
   return licenseLink;
 }
 
-// TODO: Create a function that returns the license section of README
+// Returns the license section of the README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   let licenseData = '';
@@ -72,7 +73,7 @@ function createTOC(data) {
   return tocText;
 }
 
-// TODO: Create a function to generate markdown for README
+// Generate markdown for the README file
 function generateMarkdown(data) {
   
   let markdown; 

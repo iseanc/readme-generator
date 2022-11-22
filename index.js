@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Modules required for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
@@ -17,7 +17,7 @@ const licenses = [
   'AGPL-3.0'
 ];
 
-// TODO: Create an array of questions for user input
+// Questions for user input
 const arrayQuestions = [
     {
       type: 'input',
@@ -68,7 +68,7 @@ const arrayQuestions = [
     }
   ];
 
-// TODO: Create a function to write README file
+// Write a README file
 function writeToFile(data) {
 
   fs.writeFile('./data/README.md', data, err => {
@@ -79,16 +79,15 @@ function writeToFile(data) {
   });
 }
 
-// TODO: Create a function to initialize app
+// Run Inquirer prompts on startup
 function init() {
   inquirer
   .prompt(arrayQuestions)
   .then((response) => { 
     writeToFile(gm(response));
-    // console.log(gm(response));
     }
   );
 }
 
-// Function call to initialize app
+// Run initialization function on startup
 init();
